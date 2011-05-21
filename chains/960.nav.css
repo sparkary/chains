@@ -1,0 +1,199 @@
+/*
+-----------------------------------------------
+Navigation
+----------------------------------------------- */
+
+/* navigation (horizontal subnavigation)
+----------------------------------------------- */
+ul.nav,
+ul.nav * { margin:0;padding:0;}
+
+ul.nav {
+  position:relative;
+  max-width:100%;
+	list-style:none;
+  height:1em;
+  }
+ul.ninenav {
+  background:#666;
+  height:2em;
+
+}
+ul.nav li {
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	list-style:none;
+	font-weight:normal;
+}
+
+
+ul.nav li ul {
+	cursor:default;
+	width:100%;
+	max-width:100%;
+	position:absolute;
+	list-style:none;
+	height:auto;
+	left:-9000px;
+	top:1em;
+}
+ul.ninenav li ul {
+	background-position:0 0 !important;
+	top:2em;
+}
+ul.nav li ul li {
+	padding:0;
+	border:none;
+	width:auto;
+	list-style:none;
+	max-width:none;
+}
+ul.nav li a {
+	display:block;
+	float:left;
+	line-height:1em;
+}
+ul.ninenav li a {
+	color:#fff;
+	background:#666;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0 1em;
+	line-height:2em;
+	height:2.4em;
+}
+ul.nav li ul li a {
+	position:relative !important; /* ie Mac */
+	white-space:nowrap;
+	font-weight:normal;
+	line-height:1em;
+	height:1em;
+}
+ul.ninenav li ul li a {
+	cursor:pointer !important;
+	line-height:2em;
+	height:2em;
+	color:#666;
+	background-position:0 50% !important;
+}
+
+ul.ninenav li:hover a,
+ul.ninenav li a:hover,
+ul.ninenav li a:focus {color:#000; background:#ccc;}
+ul.ninenav li a:active {color:#666; background:#fff;}
+ul.nav li:hover ul {left:0;z-index:10}
+ul.ninenav li ul,
+ul.ninenav li {background:#ccc !important}
+ul.ninenav li:hover ul li a {color:#444;}
+ul.ninenav li:hover ul li a:hover {color:#000; background:#fff;}
+ul.ninenav li:hover ul li a:active {color:#666; background:#fff;}
+
+ul.ninenav li.current a {color:#666; background:#fff; cursor:default; font-weight:bold;}
+ul.nav li.current ul {left:0;z-index:5}
+ul.ninenav li.current ul,
+ul.ninenav li.current {background:#ccc !important}
+ul.ninenav li.current ul li a {color:#444; background:#ccc; font-weight:normal;}
+ul.ninenav li.current ul li a:hover {color:#000; background:#fff;}
+ul.ninenav li ul li.current a,
+ul.ninenav li ul li.current a:hover,
+ul.ninenav li.current:hover ul li a:active {color:#666; background:#fff;}
+
+
+/* navigation (vertical subnavigation)
+----------------------------------------------- */
+ul.ninenav {
+  background:#666;
+}
+ul.main li {
+  position:relative;
+  top:0;
+  left:0;
+}
+ul.main li ul {
+  border-top:0;
+}
+ul.main li ul li {
+  float:left;
+}
+ul.main li a {
+	height:1em;
+	line-height:1em;
+}
+ul.ninemain li a {
+	height:2em;
+	line-height:2em;
+}
+
+ul.ninemain li a {
+	color:#fff;
+	background:#666;
+	border:0;
+}
+ul.main li ul li a {
+  line-height:1em;
+  height:1em;
+  text-align:left;
+}
+ul.ninemain li ul li a {
+  background:#444;
+  line-height:2em;
+  height:2em;
+  width:12em;
+  color:#fff;
+  border-top:1px solid #444;
+
+}
+ul.ninemain li a:focus {color:#fff; background:#666;}
+ul.ninemain li ul li a:hover {
+  color:#fff;
+  background:#555;
+}
+ul.ninemain li:hover a {
+  color:#fff;
+  background:#555;
+}
+ul.ninemain li:hover ul li a {color:#fff;}
+ul.ninemain li:hover ul li a:hover {color:#fff; background:#444;}
+ul.ninemain li:hover a:active {background:#444;}
+ul.ninemain li:hover ul li a:active {color:#fff; background:#222;}
+
+
+/* secondary list
+----------------------------------------------- */
+ul.nav li.secondary {
+	float:right;
+	color:#cde;
+	background:transparent !important;
+}
+ul.nav li.secondary span.status {
+	float:left;
+	padding:0 1em;
+	line-height:2.77em;
+	height:2.77em;
+  font-size:0.9em;
+}
+ul.nav li.secondary span.status a {
+	float:none;
+	display:inline;
+	padding:0;
+	height:auto;
+	line-height:auto;
+	color:#cde;
+	background:transparent;
+}
+ul.ninenav li.secondary span.status a:hover {
+	color:#fff;
+	background:transparent;
+}
+ul.ninenav li.secondary span.status span {
+	text-transform:capitalize;
+}
+ul.ninenav li.secondary:hover a {
+	color:#fff;
+	background:#666;
+}
+ul.ninenav li.secondary:hover a:hover {
+	background:#555;
+}
+ul.ninenav li.secondary:hover a:active {background:#444;}

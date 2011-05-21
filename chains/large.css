@@ -1,0 +1,8 @@
+.marginmodifier
+{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	font-size: 110%;
+}

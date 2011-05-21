@@ -1,0 +1,17 @@
+.marginmodifier
+{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	overflow: hidden;
+}
+#ca-purge,
+#ca-protect,
+#ca-move,
+#ca-delete,
+#ca-history,
+#pt-adminlinks,
+#pt-preferences,
+#pt-mycontris {
+	display: none;
+}
