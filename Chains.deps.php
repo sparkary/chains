@@ -8,4 +8,5 @@
 if ( ! defined( 'MEDIAWIKI' ) )
 	die( 1 );
 
-require_once( dirname( dirname( __FILE__ ) ) . '/includes/SkinTemplate.php');
+chdir(dirname($_SERVER["SCRIPT_FILENAME"]).'/skins/');
+require_once( '../includes/SkinTemplate.php');

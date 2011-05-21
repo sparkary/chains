@@ -75,6 +75,7 @@ a.sprite-viewsource { background-position: -620px -70px; }
 a.sprite-history { background-position: -480px -70px; }
 
 a.sprite-delete { background-position: -585px -70px; }
+a.sprite-undelete { background-position: -585px -105px; }
 a.sprite-watch { background-position: -340px -70px; }
 a.sprite-unwatch { background-position: -340px -105px; }
 a.sprite-protect { background-position: -550px -70px; }
